@@ -380,9 +380,9 @@ jamrouter_signal_handler(int i)
 int
 init_signal_handlers(void)
 {
-	int                 signals[14] = {
+	int                 signals[13] = {
 		SIGHUP,  SIGINT,  SIGQUIT, SIGILL,  SIGABRT, SIGFPE,  SIGSEGV,
-		SIGPIPE, SIGALRM, SIGTERM, SIGUSR1, SIGUSR2, SIGCHLD, 0
+		SIGPIPE, SIGALRM, SIGTERM, SIGUSR1, SIGUSR2, 0
 	};
 	struct sigaction    action;
 	int                 j;
